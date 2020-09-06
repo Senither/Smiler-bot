@@ -4,11 +4,22 @@ const client = new Discord.Client()
 
 const emojis = [
   ':smile:',
-  ':slight_smile:',
   ':smiley:',
   ':smiley_cat:',
   ':sweat_smile:',
+  ':upside_down:',
+  ':smiling_imp:',
 ]
+
+function generateReply() {
+  let randomNumber = Math.floor(Math.random() * 20)
+
+  if (randomNumber == 0) {
+    return emojis[Math.floor(Math.random() * emojis.length)]
+  } else {
+    return ':slight_smile:'
+  }
+}
 
 function isSmileMessage(message) {
   return message.mentions.users.has(client.user.id)
@@ -25,7 +36,7 @@ client.on('message', message => {
   }
 
   if (isSmileMessage(message)) {
-    message.reply(emojis[Math.floor(Math.random() * emojis.length)])
+    message.reply(generateReply())
   }
 })
 
