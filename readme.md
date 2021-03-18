@@ -25,7 +25,7 @@ And that's it.
 
 ### Another Dumb Bot
 
-For another dumb bot, check out [Truer](https://github.com/Senither/Truer-bot), the bot that replies with "True!" to everything.
+For another dumb bot, check out [Truer](https://github.com/Senither/Truer-bot), the bot that replies with "True!" to everything, or if you want the reverse of that you can checkout [Falser](https://github.com/senither/Falser-bot) which replies with "False!" to everything..
 
 ### License 
 
